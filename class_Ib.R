@@ -54,4 +54,4 @@ data$smoker_num <- ifelse(data$smoker_fac == "Yes", 1, 0)
 write.csv(data, file = "clean_data/patient_info_clean.csv")
 
 # saving the script
-save.image(file = "Boateng_Agyekum_class_Ib.RData" )
+save.image(file = "Boateng_Agyekum_class_Ib_Assignment.RData" )
