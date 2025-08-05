@@ -50,6 +50,5 @@ data$smoker_num <- ifelse(data$smoker_fac == "Yes", 1, 0)
 #Save the cleaned dataset in your clean_data folder with the name patient_info_clean.csv
 write.csv(data, file = "clean_data/patient_info_clean.csv")
 
-# saving the script
-save.image(file = "script/ class_Ib.RData")
-sav
+# saving the workspace
+save.image(file = "class_Ib.RData")
