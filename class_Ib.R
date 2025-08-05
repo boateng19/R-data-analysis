@@ -1,4 +1,7 @@
 getwd()
+#set working directory
+setwd("/Users/mac/Desktop/AI_Omics_Internship_2025/Module_I")
+
 #creating folders
 dir.create("raw_data")
 dir.create("clean_data")
