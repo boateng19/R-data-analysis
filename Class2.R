@@ -7,12 +7,13 @@ setwd( "/Users/mac/Desktop/AI_Omics_Internship_2025/Module_I/")
 input_dir <- "raw_data" 
 output_dir <- "results"
 
+# Creating the classification function
 classify_gene <- function(logFC, padj) {
   ifelse(logFC > 1 & padj < 0.05, "Upregulated",
          ifelse(logFC < -1 & padj < 0.05, "Downregulated", "Not significant"))
 }
 
-# 2. Create a Results folder if it does not exist
+# 2. Create a results folder if it does not exist
 if (!dir.exists("results")) {
   dir.create("results")
 }
@@ -26,7 +27,7 @@ for (file_names in files_to_process) {
     
     input_file_path <- file.path(input_dir, file_names)
     
-    # Import dataset
+    # Import dataset, Reading the data
     data <- read.csv(input_file_path, header = TRUE)
     cat("File imported. Checking for missing values...\n")
   
@@ -46,5 +47,5 @@ for (file_names in files_to_process) {
   cat("\nSummary for", file_names, ":\n")
   print(table(data$status))
 }
-
+# Save the workspace
 save.image(file = "Boateng_Agyekum_Class_2-Assignment.RData")
