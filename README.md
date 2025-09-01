@@ -1,2 +1,4 @@
 # R-data-analysis
-R data files
+R script for analysis:
+Data processing
+Differential gene expression analysis 
