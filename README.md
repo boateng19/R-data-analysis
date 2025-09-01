@@ -1,4 +1,4 @@
 # R-data-analysis
 R script for analysis:
-Data processing
+Data processing and
 Differential gene expression analysis 
